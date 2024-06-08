@@ -1,0 +1,36 @@
+.mslide {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  width: 600px;
+}
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.4s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activeslide {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.nextslide {
+  transform: translateX(100%);
+}
+.lastslide {
+  transform: translateX(-100%);
+}
+.img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .mslide {
+    width: 100%;
+    object-fit: contain;
+  }
+}

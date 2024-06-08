@@ -1,0 +1,131 @@
+.p-head-slides {
+  display: flex;
+  position: relative;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  top: -2px;
+}
+.p-head-s {
+  background: linear-gradient(
+    to bottom right,
+    #798777,
+    #a2b29f,
+    #bdd2b6,
+    #f8ede3
+  );
+}
+.pro-head {
+  padding-top: 25px;
+  margin: 0%;
+  /* background-color: #346751; */
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+}
+.product {
+  position: absolute;
+  transition: all 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  opacity: 0;
+  z-index: -11;
+}
+.pactiveslide {
+  transform: translateX(0%) scale(1.5);
+  opacity: 1;
+  z-index: 205;
+  transition: all 0.3s linear;
+}
+/* .pactiveslide:hover {
+  transform: rotateY(180deg) scale(1.5);
+} */
+.plastslide {
+  transform: translateX(-100%);
+  opacity: 0.5;
+  z-index: 199;
+}
+.verynextslide {
+  transform: translateX(100%);
+  opacity: 0.5;
+  z-index: 100;
+}
+.pnextslide {
+  transform: translateX(100%);
+  z-index: 100;
+}
+.pro-img {
+  height: 225px;
+  width: 300px;
+}
+.inner-nona {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.inner-nona > p {
+  margin: 0;
+  /* margin-top: 5px; */
+  font-family: "Ubuntu", sans-serif;
+}
+.pprev,
+.pnext {
+  background-color: black;
+  color: white;
+  /* z-index: 203; */
+}
+.pbtns {
+  justify-content: space-around;
+  /* position: relative; */
+  z-index: 203;
+}
+/* start */
+
+/* end */
+.link-pro {
+  text-decoration: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 3px;
+  text-align: center;
+  border-radius: 8px;
+}
+@media (max-width: 1000px) {
+  .p-head-slides {
+    height: 275px;
+  }
+  .pro-head {
+    padding: 10px;
+    margin: 0;
+    padding-top: 30px;
+  }
+  .pbtns {
+    justify-content: space-between;
+  }
+  .pro-img {
+    width: 100%;
+    height: 85%;
+  }
+  .flip-card,
+  .inner-nona {
+    width: 120px;
+    height: 70px;
+  }
+  .flip-card-front > div > p,
+  .inner-nona > p,
+  .flip-card-back > p {
+    font-size: 0.5rem;
+    font-weight: lighter;
+  }
+  .link-pro {
+    font-size: 0.5rem;
+    border-radius: 4px;
+  }
+}

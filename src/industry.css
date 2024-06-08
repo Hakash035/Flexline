@@ -1,0 +1,96 @@
+.industry {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.industry > p {
+  max-width: 45%;
+  font-family: "Titillium Web", sans-serif;
+  margin: 0%;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  line-height: 2rem;
+}
+.industry-head {
+  margin: 0%;
+  text-align: start;
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  color: rgba(238, 49, 36, 1);
+}
+.indus-div {
+  margin-top: 30px;
+  padding: 20px 0px 20px 0px;
+}
+.header-name {
+  margin: 0%;
+  text-align: start;
+  font-size: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  color: rgba(238, 49, 36, 1);
+}
+.industry-header {
+  padding-top: 25px;
+  background-size: cover;
+  height: 150px;
+  background-position: center center;
+}
+.industry-header > p {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0%;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: white;
+  margin-left: 25px;
+}
+.starter {
+  text-align: center;
+}
+.starter > h4 {
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  margin-top: 15px;
+  color: rgba(238, 49, 36, 1);
+}
+.starter > p {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0%;
+  font-size: 1.15rem;
+  font-weight: bolder;
+  margin: 25px 0px;
+}
+@media (max-width: 1000px) {
+  .starter > p {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .industry {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .industry-head {
+    margin-left: 5px;
+  }
+  .industry-header {
+    background-size: cover;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .industry-head {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .industry-header > p {
+    font-size: 0.8rem;
+  }
+  .industry > p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+}

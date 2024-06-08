@@ -1,0 +1,553 @@
+.colo {
+  width: 40vw;
+  height: 30vw;
+  position: absolute;
+}
+.slide1 {
+  background-position: center, bottom;
+}
+.main {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 540px;
+}
+.nextslide {
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s linear;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.lastslide {
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s linear;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.activeslide {
+  transform: translateX(0%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s linear;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.prev,
+.next {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+.btns {
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+/* .slides {
+  width: 100%;
+  height: 550px;
+  z-index: -1;
+} */
+.nextslide > img p {
+  width: 0%;
+  height: 0%;
+}
+.text {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+  /* margin-left: 8vw; */
+  max-width: 70%;
+  font-size: 3.5rem;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prod-head {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  color: white;
+}
+.products-section {
+  /* background-color: #383333; */
+  background-image: url("../src/img/bg-products.jpg");
+  background-size: cover;
+  padding: 35px;
+}
+.me-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.media-icon {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  padding: 6px;
+}
+.media-icon:hover {
+  background-color: white;
+  color: black;
+}
+
+/* .products-list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+} */
+.products-list {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.m-list {
+  position: absolute;
+  display: flex;
+  gap: 120px;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+.activeslide2 {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.nextslide2 {
+  transform: translateX(100%);
+}
+.lastslide2 {
+  transform: translateX(-100%);
+}
+.why-flexline {
+  background-image: url("../src/img/why-flexline.jpg");
+  background-size: cover;
+  height: 620px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.head-why-flexline {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  color: white;
+  padding-top: 30px;
+}
+/* .overlay2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* padding-top: 30px; */
+
+.about-us {
+  max-height: 400px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px;
+}
+.sin-ab {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  text-align: start;
+  height: 100px;
+  width: fit-content;
+  grid-row: span(1);
+  grid-column: span(1);
+  margin: 0px 80px;
+}
+.points-icon {
+  font-size: 1.5rem;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+.points {
+  font-size: 1.5rem;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+.to-abt-us-btn {
+  border: none;
+  outline: none;
+  background-color: rgba(238, 49, 36, 1);
+  /* padding: 10px; */
+  width: 80px;
+  height: 25px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  transition: all 0.2s linear;
+  text-decoration: none;
+  padding: 8px;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 50px;
+}
+.to-abt-us-btn:hover {
+  background-color: black;
+}
+.industries-home {
+  padding: 20px;
+  text-align: center;
+}
+.industry-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  height: 400px;
+}
+.n3,
+.p3 {
+  background-color: rgba(43, 41, 41, 0.7);
+  color: white;
+  transition: all 0.3s linear;
+}
+.n3:hover,
+.p3:hover {
+  background-color: rgba(238, 49, 36, 0.8);
+}
+.m-indus {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.activeslide3 {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.nextslide3 {
+  transform: translateX(100%);
+}
+.lastslide3 {
+  transform: translateX(-100%);
+}
+.indus-head {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+}
+.client-img {
+  width: 160px;
+  height: 90px;
+}
+
+.clients {
+  /* display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: repeat(3, 2fr);
+  gap: 40px;
+  margin: 25px auto;
+  height: fit-content; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.clients-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  background-color: #57b361;
+}
+
+.our-cli-head {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  color: white;
+}
+.contact-us-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Titillium Web", sans-serif;
+  height: 300px;
+  padding: 25px;
+  background-color: #222831;
+  color: white;
+}
+.end-list {
+  list-style: none;
+  padding: 0%;
+}
+
+.end-head {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+}
+.abt-flexline-con {
+  max-width: 30%;
+}
+.abt-flexline-con > p {
+  margin: 0%;
+}
+.end-list-link {
+  text-decoration: none;
+  color: white;
+}
+.copyrights {
+  border-top: 1px solid white;
+  width: 100%;
+  height: fit-content;
+  background-color: #222831;
+  color: white;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Titillium Web", sans-serif;
+}
+.copyrights > p {
+  margin: 0%;
+  padding: 0%;
+}
+.slidebar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  transition: all 0.3s linear;
+  background-color: black;
+  color: white;
+  top: 0;
+}
+.activeslidebar {
+  right: 0;
+}
+.hiddenslidebar {
+  right: -100%;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-list > li {
+  margin-bottom: 20px;
+}
+.slidebar > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  transform: scale(1.5);
+  margin: 5px 15px 0px 90%;
+}
+.profile {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 10px;
+  background: linear-gradient(
+    to bottom right,
+    #798777,
+    #a2b29f,
+    #bdd2b6,
+    #f8ede3
+  );
+  text-align: center;
+}
+.profile > h4 {
+  margin: 0%;
+  padding: 25px 0px 25px 0px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+}
+.in-pro {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: start;
+}
+.content {
+  max-width: 40%;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.content > p {
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+}
+.ic {
+  transform: scale(2);
+}
+.content > span {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+@media (max-width: 1000px) {
+  .text {
+    color: black;
+    font-size: unset;
+  }
+  .profile-vid {
+    width: 300px;
+    height: 170px;
+  }
+  .vid-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .in-pro {
+    flex-wrap: wrap;
+  }
+  .profile {
+    height: fit-content;
+  }
+  .content {
+    max-width: 90%;
+  }
+  .content > p {
+    font-size: 1.25rem;
+  }
+  .main {
+    height: 215px;
+  }
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  /* .client-img {
+    width: 120px;
+    height: 30px;
+  } */
+  .slide1 {
+    background-size: cover;
+  }
+  .m-list {
+    gap: 10px;
+  }
+  .about-us {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    margin-top: 0%;
+    /* margin-left: 10px; */
+    overflow-x: scroll;
+    overflow-y: visible;
+    max-width: 100%;
+  }
+  .why-flexline {
+    height: fit-content;
+    padding-bottom: 25px;
+  }
+  .sin-ab {
+    padding: 0;
+    margin: 0;
+    min-width: 75%;
+  }
+  .points {
+    font-size: 1rem;
+  }
+  .ic {
+    transform: scale(1);
+  }
+  .head-why-flexline {
+    margin: 0%;
+    padding-top: 25px;
+  }
+  .to-abt-us-btn {
+    margin-bottom: 25px;
+  }
+  .contact-us-home {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+  }
+  .client-img {
+    width: 90px;
+    height: 67.5px;
+  }
+  .products-list {
+    height: 200px;
+  }
+  .industry-list {
+    height: 200px;
+  }
+  .indus-head {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
+  .abt-flexline-con {
+    max-width: 100%;
+  }
+}

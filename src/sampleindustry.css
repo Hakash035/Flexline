@@ -1,0 +1,77 @@
+.sampleindustry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ind-one {
+  height: 350px;
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(238, 49, 36, 0.9);
+}
+.ind-img {
+  width: 100%;
+  /* object-fit: contain; */
+  height: 90%;
+}
+.ind-name {
+  font-size: 1.25rem;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: normal;
+  color: white;
+  margin: 0%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 350px;
+  max-width: 350px;
+  background-color: rgb(95, 92, 92);
+}
+.in {
+  height: 50%;
+  width: 100%;
+  /* margin: 15px; */
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+.in > p {
+  margin: 5px;
+  /* padding: 5px; */
+}
+/* .sep {
+  width: 350px;
+  height: 15px;
+  color: black;
+} */
+.in > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 1000px) {
+  .ind-one {
+    width: 145px;
+    height: 145px;
+  }
+  .info {
+    height: 145px;
+    max-width: 120px;
+  }
+  .in > p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size: 0.5rem;
+  }
+  .ind-name {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,213 @@
+.map {
+  width: 100%;
+  height: 350px;
+}
+.Find-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 45%;
+  gap: 20px;
+}
+
+.office,
+.email,
+.phone {
+  height: fit-content;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 2px 3px 3px 2px rgba(136, 136, 136, 0.7);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  gap: 15px;
+}
+
+.office > h6,
+.email > h6,
+.phone > h6 {
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  color: rgba(238, 49, 36, 1);
+}
+.office > p,
+.email > p,
+.phone > p {
+  margin: 0;
+}
+
+.contact-us-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.icon-con {
+  transform: scale(1.25);
+}
+
+.en-form {
+  width: 35%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  background-color: rgb(70, 60, 60);
+  border-radius: 12px;
+  box-shadow: 2px 4px 4px 2px #b4b3b3;
+  padding: 10px 0px 25px 15px;
+}
+.en-form > input,
+textarea {
+  border: none;
+  outline: none;
+  width: 90%;
+  height: 30px;
+  background: transparent;
+  color: white;
+  padding: 2px 3px 2px 3px;
+  border-bottom: 1px solid #b4b3b3;
+}
+.en-form > input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: white;
+}
+.en-form > input:focus,
+input:hover,
+textarea:hover,
+textarea:focus {
+  border-bottom: 1px solid white;
+}
+
+textarea::-webkit-resizer {
+  display: none;
+}
+.en-form > h6 {
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  color: white;
+  text-decoration: underline;
+  color: rgba(238, 49, 36, 1);
+  margin-bottom: 10px;
+}
+.head-contact-us {
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 250px;
+  /* padding-left: 30px; */
+  margin-bottom: 25px;
+}
+.head-contact-us > h5 {
+  font-size: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  color: rgb(200, 255, 0);
+  font-weight: bolder;
+  margin-left: 30px;
+}
+.head-contact-us > h6 {
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  margin-top: 25px;
+  color: black;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.ver-bar {
+  height: 420px;
+  width: 1px;
+  margin: 0%;
+  padding: 0%;
+  background-color: black;
+}
+.sub-btn {
+  background-color: black;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  height: 30px;
+  width: 150px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+  font-size: 1rem;
+}
+.sub-btn:hover {
+  transform: scale(0.9);
+  background-color: #b4b3b3;
+  color: black;
+  font-weight: bolder;
+}
+
+.sub-btn:disabled {
+  opacity: 0.5;
+  font-weight: bolder;
+  pointer-events: none;
+}
+.msg-rec {
+  border: 1px solid #b4b3b3;
+  background-color: rgba(180, 179, 179, 0.4);
+  padding: 3px;
+  transition: all 0.2s linear;
+  font-family: "Titillium Web", sans-serif;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.btn-msg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: fit-content;
+}
+.Find-us > h5 {
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0%;
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  .contact-us-main {
+    flex-direction: column;
+  }
+  .ver-bar {
+    display: none;
+  }
+  .en-form {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .Find-us {
+    max-width: 90%;
+    margin-top: 25px;
+  }
+  .head-contact-us > h5 {
+    font-size: 1.25rem;
+    color: rgb(200, 255, 0);
+  }
+  .head-contact-us > h6 {
+    font-size: 0.8rem;
+    max-width: 80%;
+    margin-top: 10px;
+    color: white;
+  }
+  .head-contact-us {
+    height: 120px;
+    background-size: contain;
+  }
+}

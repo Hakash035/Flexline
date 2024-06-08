@@ -1,0 +1,44 @@
+.simpleproduct {
+  width: 375px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+  background-color: black;
+}
+.prod-name {
+  font-size: 1.5rem;
+  font-family: "Titillium Web", sans-serif;
+  margin: 2px;
+  color: rgba(238, 49, 36, 0.9);
+}
+.prod-img {
+  width: 100%;
+  object-fit: contain;
+}
+.read-more {
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  width: 120px;
+  height: 25px;
+  margin: 5px;
+}
+.prod-img-div {
+  border: 1px solid black;
+  object-fit: contain;
+  overflow: hidden;
+  padding: 5px;
+}
+@media (max-width: 1000px) {
+  .simpleproduct {
+    width: 150px;
+  }
+  .prod-name {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,64 @@
+.header-pvc {
+  background-image: url("./img/Pvc-bg-new.jpg");
+
+  height: 225px;
+  width: 100%;
+  background-size: cover;
+  background-position: top center;
+}
+table,
+th,
+td {
+  border: 0.09px solid rgba(131, 130, 130, 0.5);
+  border-collapse: collapse;
+}
+.rc-table-content > table {
+  margin: 0% auto;
+}
+
+.rc-table-thead > tr > th {
+  background-color: #e9ecef;
+  font-family: "Ubuntu", sans-serif;
+}
+.rc-table-tbody {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+}
+.head-ele {
+  /* background-color: rgb(165, 182, 172); */
+  background-color: #e9ecef;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px 25px 10px 25px;
+}
+table {
+  margin: 25px auto;
+}
+.info-table > th,
+.info-table > td {
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 5px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+}
+
+.img-pvc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.img-pvc > img {
+  width: 300px;
+  object-fit: contain;
+}
+@media (max-width: 1000px) {
+  .info-table {
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  .img-pvc > img {
+    width: 150px;
+  }
+}
